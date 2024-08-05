@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@adonisjs/lucid/orm'
-import { EnumType } from 'typescript'
+// import { EnumType } from 'typescript'
 
 export default class Tweet extends BaseModel {
   @column({ isPrimary: true })

@@ -77,8 +77,8 @@ export default class AuthController {
   //   // return ctx.response.redirect().toRoute('home')
   //   return ctx.response.redirect().toRoute('welcome')
   // }
-  BringToTheFirstPage({ view, auth }: HttpContext) {
-    const user = auth.user
+  BringToTheFirstPage({ view }: HttpContext) {
+    // const user = auth.user
     return view.render('pages/welcome')
   }
   async BringToLoginPage({ view }: HttpContext) {
